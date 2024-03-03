@@ -20,7 +20,7 @@ char *generate_key(char *name) {
     key[i] = generate_random_char();
   }
   key[6] = '\0';
-
+  free(key)
 
   return key;
 }
@@ -96,8 +96,6 @@ int main() {
       printf("key to %s: %s\n", name, key);
 
      
-      free(key);
-
      
       add_to_buffer(name, key);
 
