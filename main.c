@@ -50,7 +50,7 @@ void add_to_buffer(char *name, char *key) {
   }
 
 
-  free(key);
+
 }
 
 
